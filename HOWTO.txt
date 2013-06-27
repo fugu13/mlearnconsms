@@ -1,0 +1,42 @@
+
+Github URL: http://github.com/fugu13/mlearnconsms
+
+
+Steps for the session:
+
+1. Sign up for WaxLRS at http://waxlrs.com. You're going to need to choose a
+site name (which is unique to you) and put in your name, email, and password.
+
+The site name you put in is going to be the first part of your WaxLRS URL,
+such as mystrangesitename.waxlrs.com. We're going to use it later.
+
+When you sign up, you'll be redirected to a login form. Log in there with the
+email and password you gave when you signed up.
+
+Click on the gear in the upper right corner, which will take you to settings.
+Down near the bottom of the page, click the "Create New Basic" button.
+
+Keep this page open, we're going to use some info on it later. But first,
+time to open a new browser window or tab.
+
+Navigate to Twilio and sign up (you'll need to verify your phone number by
+receiving an SMS). Then head to the configuration page for the free number
+Twilio gives you. That's where we're going to use the information from WaxLRS.
+
+In the SMS Request URL Box, set the URL to
+http://mlearnconsms.appspot.com/<yoursitename>/<basiccredentiallogin>/<basiccredentialpassword>
+- no slash on the end, and POST selected to the right.
+
+That's it! Send an SMS to the number and shortly you should get a response.
+While you're on a free Twilio account your SMSs will have prefixes on them.
+
+Some extra resources
+========================
+
+Just getting started with Twilio: http://www.twilio.com/docs/quickstart/php/sms/hello-monkey
+
+If you modify the code, you can put it in your own Google App Engine account:
+
+    Download the SDK here: https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python
+
+    Follow the directions here to upload your app: https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading
